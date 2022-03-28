@@ -1,7 +1,5 @@
 def korelasi(n,sX,sX2,sY,sY2,sXY):
-    r1 = (n * sXY) - (sX * sY)
-    r2 = ((n * sX2 - (sX ** 2)) * (n * sY2 - (sY ** 2))) ** (1./2)
-    r = r1 / r2
+    r = ((n * sXY) - (sX * sY)) / ((n * sX2 - (sX ** 2)) * (n * sY2 - (sY ** 2))) ** (1./2)
     print('\nnilai r          : ', r)
 
 def findY(n,sX,sY,sXY,sX2,inputUser):
